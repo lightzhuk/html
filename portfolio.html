@@ -15,6 +15,10 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
       body {
         background: url(http://static.demilked.com/wp-content/uploads/2015/04/crazy-dedicated-photographers-extreme-photography-fb.jpg)
@@ -23,6 +27,19 @@
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+      }
+      .card {
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+      }
+      .card:hover {
+        background-color: rgba(10, 0, 0, 0.1);
+      }
+      .card img {
+        border-radius: 50%;
+        width: 60%;
+        margin: auto;
       }
     </style>
   </head>
@@ -58,5 +75,79 @@
         </div>
       </div>
     </nav>
+
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1025/300"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                deleniti eaque obcaecati rerum magnam autem at iusto dolore
+                illum suscipit?
+              </p>
+              <a
+                href="https://picsum.photos/id/1025/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large Photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1/300"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+                quos at ad sunt labore fuga explicabo dolorum velit, aperiam
+                nam.
+              </p>
+              <a
+                href="https://picsum.photos/id/1/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large Photo</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://picsum.photos/id/1027/300"
+              class="card-img-top"
+              alt="My image"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam repudiandae reprehenderit enim accusantium facilis a
+                sunt exercitationem aperiam quidem beatae!.
+              </p>
+              <a
+                href="https://picsum.photos/id/1027/1500"
+                target="_blank"
+                class="btn btn-primary"
+                >Large Photo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
